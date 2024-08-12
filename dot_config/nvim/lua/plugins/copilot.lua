@@ -18,7 +18,7 @@ return {
     event = "VeryLazy",
     keys = {
       {
-        "<c-a>",
+        "<c-<>",
         function()
           if copilot.suggestion_visible() then
             return '<cmd>lua require("copilot.suggestion").accept_word()<cr>'

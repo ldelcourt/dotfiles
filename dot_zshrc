@@ -96,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-alias nvim="/opt/nvim-linux64/bin/nvim"
+# alias nvim="/opt/nvim-linux64/bin/nvim"
 export PATH="$HOME/dev/flutter/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$PATH:/usr/local/go/bin"
@@ -104,7 +104,6 @@ export PATH="$PATH:/usr/local/go/bin"
 eval "$(zoxide init zsh)"
 
 
-export GO111MODULE=one
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

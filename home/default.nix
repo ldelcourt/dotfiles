@@ -1,15 +1,8 @@
-{ username, ... }:
+{ username, mylib, ... }:
 
 {
   # import sub modules
-  imports = [
-    # ./shell.nix
-    ./core.nix
-    ./container.nix
-    # ./git.nix
-    # ./starship.nix
-  ];
-
+  imports = mylib.scanPaths ./.;
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
   home = {

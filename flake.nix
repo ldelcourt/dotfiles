@@ -44,14 +44,16 @@
     home-manager,
     ...
   }: let
-    # TODO replace with your own username, system and hostname
+    inherit (inputs.nixpkgs) lib;
     username = "loudelcourt";
+    mylib = import ./lib {inherit lib;};
     system = "aarch64-darwin"; # aarch64-darwin or x86_64-darwin
     hostname = "macbook";
 
     specialArgs =
       inputs
       // {
+        inherit mylib;
         inherit username hostname;
       };
   in {

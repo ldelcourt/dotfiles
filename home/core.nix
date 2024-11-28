@@ -15,6 +15,9 @@
       enable = true;
       userName="ldelcourt";
       userEmail="lou.delcourt@gmail.com";
+      aliases = {
+        graph = ''log --graph --pretty="format:%C(auto)%h %d %s %Cblue[%ad %an]" --decorate --all --date="format:%d-%m-%Y %H:%M"'';
+      };
     };
 
     # A modern replacement for ‘ls’

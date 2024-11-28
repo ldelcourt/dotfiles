@@ -64,6 +64,7 @@
       "arc"
       "stats" # system monitor
       "insomnia" # rest client
+      "docker"
     ];
   };
 }

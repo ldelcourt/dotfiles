@@ -8,18 +8,6 @@
   environment.systemPackages = with pkgs; [
     git
     neovim
-    lazygit
-
-    wezterm
-
-    ripgrep
-    fzf
-
-    sbt
-    scala
-    yazi
-    zellij
-    zoxide
   ];
   environment.variables.EDITOR = "nvim";
    

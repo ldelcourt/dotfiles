@@ -17,7 +17,7 @@
         { name = "zsh-users/zsh-autosuggestions"; } # Simple plugin installation
         { name = "zsh-users/zsh-syntax-highlighting"; } # Simple plugin installation
       ];
-        };
+    };
 
 
     oh-my-zsh = {

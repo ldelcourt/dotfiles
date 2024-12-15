@@ -1,7 +1,8 @@
-{pkgs, lib, ...}: {
+{pkgs,  ...}: {
   home.packages = with pkgs; [
     lazygit
 
+    obsidian
     wezterm
     zellij
 
@@ -11,13 +12,24 @@
     yazi
     zoxide
 
+    # TODO: Change textliveFull to smaller package and add the required plugins
+    # see https://github.com/Wandmalfarbe/pandoc-latex-template/
+    # also move this to a separate file
+    pandoc
+    texliveFull
+    
     rustup
     coursier
+    metals
     sbt
     scala
+    python3
   ];
 
   programs = {
+    java = {
+      enable = true;
+    };
     # modern vim
     neovim = {
       enable = true;

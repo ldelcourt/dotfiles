@@ -6,7 +6,7 @@
   # Zsh configuration
   programs.zellij = {
     enable = true;
-    enableZshIntegration = true;
+    enableZshIntegration = false;
   };
   xdg.configFile."zellij/config.kdl".source = ./config.kdl;
 }

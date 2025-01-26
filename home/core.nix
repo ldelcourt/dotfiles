@@ -23,7 +23,9 @@
     metals
     sbt
     scala
+
     python3
+    
   ];
 
   programs = {
@@ -40,7 +42,7 @@
     git = {
       enable = true;
       userName="ldelcourt";
-      userEmail="lou.delcourt@gmail.com";
+      userEmail="lou.delcourt@insa-lyon.fr";
       aliases = {
         graph = ''log --graph --pretty="format:%C(auto)%h %d %s %Cblue[%ad %an]" --decorate --all --date="format:%d-%m-%Y %H:%M"'';
       };
